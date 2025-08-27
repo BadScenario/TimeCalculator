@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TimeCalculator</string>
+    <string name="time_calculator_title">Калькулятор времени</string>
+    <string name="plus_button">+</string>
+    <string name="minus_button">-</string>
+    <string name="result">Результат</string>
+</resources>
