@@ -7,6 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/medium_green"
+        android:fitsSystemWindows="true"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/timeCalculatorTV"
         android:layout_width="wrap_content"
@@ -17,7 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <LinearLayout
         android:id="@+id/inputLL"
@@ -41,8 +49,8 @@
             android:layout_marginRight="8pt"
             android:layout_weight="1"
             android:hint="00h00m00s"
-            android:textAlignment="center"
-            />
+            android:inputType="text"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/secondOperandET"
@@ -51,7 +59,8 @@
             android:layout_marginLeft="8pt"
             android:layout_weight="1"
             android:hint="00h00m00s"
-            android:textAlignment="center"/>
+            android:inputType="text"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
@@ -75,6 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/light_green"
             android:text="@string/plus_button"
             android:textSize="22sp" />
 
@@ -84,6 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/light_green"
             android:text="@string/minus_button"
             android:textSize="22sp" />
 
@@ -94,6 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/result"
+        android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

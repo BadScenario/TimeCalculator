@@ -4,4 +4,6 @@
     <string name="plus_button">+</string>
     <string name="minus_button">-</string>
     <string name="result">Результат</string>
+    <string name="reset">reset</string>
+    <string name="exit">exit</string>
 </resources>
